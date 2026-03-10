@@ -39,11 +39,11 @@ const Studentdetails = () => {
     <>
     <Header/>
     <div className="container">
-      <h3 className="text-center mt-4 text-success">Student Details</h3>
+      <h3 className="text-center p-5 text-dark">Student Details</h3>
       <table className='table table-bordered mt-4'>
         <thead className='text-dark'>
           <tr>
-            <th>Sl No</th>
+            <th >Sl No</th>
             <th>Name</th>
             <th>Email</th>
             <th>Course</th>
@@ -59,8 +59,8 @@ const Studentdetails = () => {
             <td>{item.email}</td>
             <td>{item.course}</td>
             <td>{item.phone}</td>
-            <td><button onClick={()=>handleUpdate(item)} className='btn btn-warning'>Edit</button>
-            <button onClick={()=>handleDelete(item._id)} className='btn btn-danger ms-2'>Delete</button></td>
+            <td><button onClick={()=>handleUpdate(item)} className='btn border border-warning text-warning'>Edit</button>
+            <button onClick={()=>handleDelete(item._id)} className='btn border border-danger text-danger ms-2'>Delete</button></td>
           </tr>
           ))
             

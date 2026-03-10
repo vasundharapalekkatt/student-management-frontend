@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from '../components/Header'
 import { addStudentAPI, editStudentAPI } from '../services/allAPI'
 import { useLocation } from 'react-router-dom'
+import './Home.css'
 
 const StudentForm = () => {
 
@@ -50,9 +51,9 @@ const StudentForm = () => {
     <>
     <Header/>
     <div className='container'>
-      <h3 className='text-center text-success mt-5'>Add Student Details</h3>
+      <h3 className='text-center text-dark p-5'>Add Student Details</h3>
       <form className='d-flex justify-center items-center' onSubmit={handleSubmit}>
-        <div className='card border rounded text-center mt-4 p-4' style={{width:"400px"}}>
+        <div className='card border rounded text-center mt-4 p-4' style={{width:"500px",marginLeft:"100px"}}>
           <div className="mb-3 d-flex align-items-center ">
             <label className='form-label'>Name:</label>
             <input type="text" value={student.name} placeholder='Enter Your Name' className='ms-2 w-full bg-white rounded p-2 form-control' onChange={(e)=>setStudent({...student,name:e.target.value})}/>
